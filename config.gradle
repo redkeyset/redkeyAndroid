@@ -43,7 +43,10 @@ ext {
             espresso   : "androidx.test.espresso:espresso-core:${dependVersion.espresso_core}",
             // ------------- 网络请求 -------------
             okhttp     : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp3}",
-            retrofit   : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit2}"
+            retrofit   : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit2}",
+
+            //-----------------UI---------------------
+            recyclerview : 'androidx.recyclerview:recyclerview:1.2.0-alpha04' // rootProject.ext.dependencies.recyclerview
     ]
 
 }
