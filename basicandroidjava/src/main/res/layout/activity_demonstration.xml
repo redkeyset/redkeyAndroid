@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.activityDemonstrationActivity">
+
+
+    <RadioGroup
+        android:id="@+id/rg_orientation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+
+        <RadioButton
+            android:id="@+id/rbtn_0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0°" />
+
+        <RadioButton
+            android:id="@+id/rbtn_90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="90°" />
+
+        <RadioButton
+            android:id="@+id/rbtn_180"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="180°" />
+
+        <RadioButton
+            android:id="@+id/rbtn_270"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="270°" />
+
+        <RadioButton
+            android:id="@+id/rbtn_landscape"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="横屏" />
+
+        <RadioButton
+            android:id="@+id/rbtn_portrait"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="竖屏" />
+
+        <RadioButton
+            android:id="@+id/rbtn_unspecified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认" />
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/btn_get_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="获取屏幕方向"
+        app:layout_constraintEnd_toStartOf="@+id/tv_show_direction"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="597dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/tv_show_direction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_get_direction"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_get_direction"
+        app:layout_constraintTop_toTopOf="@+id/btn_get_direction" />
+
+    <Button
+        android:id="@+id/btn_intent_data"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_get_direction"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

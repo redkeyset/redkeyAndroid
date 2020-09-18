@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".server.serverBasicActivity">
+    <Switch
+        android:id="@+id/sw_server"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:checked="true" />
+
+    <Button
+        android:id="@+id/btn_start_server"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+
+    <Button
+        android:id="@+id/btn_bing_server"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+
+    <Button
+        android:id="@+id/btn_unbing_server"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+
+    <Button
+        android:id="@+id/btn_stop_server"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+    <Button
+        android:id="@+id/btn_start_down"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+    <Button
+        android:id="@+id/btn_stop_down"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+
+    <Button
+        android:id="@+id/btn_progress_server"
+        style="@style/style_btn_list_item"
+        android:background="@drawable/bg_dotted_radius_6" />
+
+</LinearLayout>

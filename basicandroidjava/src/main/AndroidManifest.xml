@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.redkey.basicandroidjava">
+
+    <application>
+        <activity android:name=".tts.TTSActivity"></activity>
+        <activity android:name=".audio.AudioActivity" />
+        <activity android:name=".lambda.LambdaActivity" />
+        <activity android:name=".server.serverBasicActivity" />
+        <activity android:name=".activity.activityBackKeyActivity" />
+        <activity android:name=".intent.intentBasicActivity" />
+        <activity
+            android:name=".activity.activityDemonstrationActivity"
+            android:configChanges="orientation|keyboardHidden|navigation" />
+        <activity android:name=".activity.activityBasicActivity01" />
+        <activity android:name=".BasicListActivity" />
+
+        <service android:name=".server.MyService" />
+    </application>
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+</manifest>

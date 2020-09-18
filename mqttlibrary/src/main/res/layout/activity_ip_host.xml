@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#eeeeee"
+    tools:context="cn.aln.mqtt.IpHostActivity">
+
+    <TextView
+        android:id="@+id/tv_mqtt_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        android:text="Mqtt设置"/>
+
+    <LinearLayout
+        android:id="@+id/line1"
+        android:layout_marginTop="60dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ip"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_w_6"
+            android:text="180.76.247.172"
+            android:hint="input service ip(IP)"/>
+
+        <EditText
+            android:id="@+id/port"
+            android:gravity="center"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:maxLines="1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:inputType="number"
+            android:text="1883"
+            android:hint="input port(端口号)"/>
+        <EditText
+            android:id="@+id/sub"
+            android:gravity="center"
+            android:visibility="gone"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="请输入主题"/>
+        <EditText
+            android:id="@+id/name"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:text="redkey02"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="username"/>
+        <EditText
+            android:id="@+id/psd"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="redkey02"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="password"/>
+
+        <EditText
+            android:id="@+id/et_sub01"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="kook01"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="主题1"/>
+
+        <EditText
+            android:id="@+id/et_sub02"
+            android:gravity="center"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:text="kook02"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/bg_w_6"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="主题2"/>
+        <Button
+            android:id="@+id/connect"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_g_6"
+            android:textColor="#0060ff"
+            android:text="去连接"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_below="@+id/line1"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:layout_height="150dp">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:textColor="#0060ff"
+            android:text="1. 确保本地服务端和手机处于局域网内（服务端在公网请忽略）"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#0060ff"
+            android:text="2. 默认订阅主题和发布主题是同一个，自发自收 "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="5dp"
+            android:textColor="#0060ff"
+            android:text="3. 用户名密码默认为admin  password "
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</RelativeLayout>

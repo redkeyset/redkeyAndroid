@@ -30,6 +30,7 @@ ext {
 
             constraint   : "1.0.2",
             okhttp3      : "3.10.0",
+            gson      : '2.8.0',
             retrofit2    : "2.4.0"
     ]
 
@@ -44,9 +45,12 @@ ext {
             // ------------- 网络请求 -------------
             okhttp     : "com.squareup.okhttp3:okhttp:${dependVersion.okhttp3}",
             retrofit   : "com.squareup.retrofit2:retrofit:${dependVersion.retrofit2}",
-
+            gson       : "com.google.code.gson:gson:${dependVersion.gson}",
             //-----------------UI---------------------
-            recyclerview : 'androidx.recyclerview:recyclerview:1.2.0-alpha04' // rootProject.ext.dependencies.recyclerview
-    ]
+            recyclerview : 'androidx.recyclerview:recyclerview:1.2.0-alpha04', // rootProject.ext.dependencies.recyclerview
 
+            //-----------------阿里巴巴 Arouter---------------------
+            arouterApi : 'com.alibaba:arouter-api:1.5.0', // rootProject.ext.dependencies.arouterApi
+            arouterCompiler : 'com.alibaba:arouter-compiler:1.2.2' // rootProject.ext.dependencies.arouterCompiler
+    ]
 }
