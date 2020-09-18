@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tts.TTSActivity">
+
+    <Button
+        android:id="@+id/btn_tts_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="停止"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_tts_play"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tts_mode"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_tts_play"
+        app:layout_constraintTop_toTopOf="@+id/btn_tts_play"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/btn_tts_play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="播放"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btn_tts_stop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btn_tts_mode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="模式"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_tts_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btn_tts_stop"
+        app:layout_constraintTop_toTopOf="@+id/btn_tts_stop"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <EditText
+        android:id="@+id/tv_tts_content"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:hint="输入语音内容"
+        android:text="我是语音助手！"
+        android:padding="10dp"
+        android:layout_margin="20dp"
+        android:background="#88AAEEEE"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toTopOf="@+id/btn_tts_stop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

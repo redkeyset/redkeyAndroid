@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--圆角半径-->
+    <corners android:radius="6dp" />
+
+    <!--背景颜色，具体颜色自行在color文件设置-->
+    <solid android:color="@color/colorWhite" />
+
+    <!-- stroke描边   dashWidth 虚线长线段长度  dashGap 虚线间隔长度-->
+    <stroke
+        android:width="2dp"
+        android:color="#8800FF"
+        android:dashWidth="5dp"
+        android:dashGap="2dp" />
+</shape>
