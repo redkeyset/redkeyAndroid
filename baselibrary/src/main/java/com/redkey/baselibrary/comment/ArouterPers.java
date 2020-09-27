@@ -36,4 +36,9 @@ public class ArouterPers {
         private final static String Main = "/Mqtt";
         public final static String MqttItem = Main + "/mqttItem";
     }
+
+    public final class PDFLibs {
+        private final static String Main = "/PDFLibs";
+        public final static String PDFItem = Main + "/PDFItem";
+    }
 }

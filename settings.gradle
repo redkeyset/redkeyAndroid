@@ -1,3 +1,4 @@
+include ':pdf_library'
 include ':lib_opengl'
 include ':custom-view-library'
 include ':lib_java'

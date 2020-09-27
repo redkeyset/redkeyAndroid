@@ -61,6 +61,14 @@ public class classDatas {
         MqttItem.setSelect(false);
         classItemBeans.add(MqttItem);
 
+        classItemBean PDFItem = new classItemBean();
+        PDFItem.setActivityArouter(ArouterPers.PDFLibs.PDFItem);
+        PDFItem.setClassName("PDF");
+        PDFItem.setDescription("PDF展示");
+        PDFItem.setIconUrl("https://static.oschina.net/uploads/img/201908/24215908_nWir.png");
+        PDFItem.setSelect(false);
+        classItemBeans.add(PDFItem);
+
         classItemBean CustomViewItem = new classItemBean();
         CustomViewItem.setActivityArouter(ArouterPers.CustomViewLibs.CustomViewList);
         CustomViewItem.setClassName("自定义View");
